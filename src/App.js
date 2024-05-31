@@ -13,6 +13,7 @@ import UserList from "./components/UserList"
 import ProtectedRoute from "./components/ProtectedRoute"
 import { UserProvider } from "./context/userContext"
 import LandingPage from "./layout/Landing"
+import Error from "./components/ErrorPage"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
+            <Route path='*' element={<Error />} />
             <Route path='/' element={<LandingPage />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
