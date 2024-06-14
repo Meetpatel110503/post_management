@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "https://jsonplaceholder.typicode.com"
+const API_URL = process.env.REACT_APP_API_URL
 
 export const getPosts = async () => {
   return axios.get(`${API_URL}/posts`)
