@@ -93,7 +93,7 @@ export default function UserDetails() {
           component={Link}
           to={`/users`}
         >
-          Back to post
+          Back to users
         </Button>
       </Box>
     </Container>

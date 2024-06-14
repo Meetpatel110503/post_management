@@ -34,7 +34,12 @@ const Navbar = () => {
   }
 
   return (
-    <AppBar position='sticky'>
+    <AppBar
+      position='sticky'
+      sx={{
+        boxShadow: "none",
+      }}
+    >
       <Toolbar>
         <Box sx={{ display: "flex", flexGrow: 1, alignItems: "center" }}>
           <Link

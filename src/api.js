@@ -26,7 +26,7 @@ export const getComments = async (id) => {
   return axios.get(`${API_URL}/posts/${id}/comments`)
 }
 
-export const getUsers = async (id) => {
+export const getUsers = async () => {
   return axios.get(`${API_URL}/users`)
 }
 
